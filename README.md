@@ -1,3 +1,5 @@
 ### [Knightly](//github.com/antfu/knightly) Build Tasks
 
-[Enabled build tasks](./tasks.yml)
+![Nightly Build](https://github.com/antfu/knightly/blob/main/res/badge.svg?raw=true)
+
+[Avaliable build tasks](./tasks.yml)
