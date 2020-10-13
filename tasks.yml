@@ -1,0 +1,13 @@
+- owner: 'vitejs'
+  repo: 'vite'
+  publishName: '@knightly/vite'
+  branches: ['master']
+  pulls: []
+  enabled: false
+
+- owner: 'vuejs'
+  repo: 'vitepress'
+  publishName: '@knightly/vitepress'
+  branches: ['master']
+  pulls: []
+  enabled: false
