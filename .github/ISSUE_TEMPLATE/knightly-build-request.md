@@ -17,6 +17,13 @@ https://github.com/...
 
 https://npmjs.com/package/...
 
+## Branches
+
+List the branches you would like to enable nightly builds
+
+- main (default)
+- ...
+
 ## Your Role
 
 Check the following boxes that apply to you. 
