@@ -3,16 +3,17 @@ name: Knightly
 on:
   schedule:
     - cron: 0 0 * * *
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        registry-url: 'https://registry.npmjs.org'
-    - run: npx knightly -c tasks.yml
-      env: 
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://registry.npmjs.org'
+      - run: npx knightly@bot -c tasks.yml
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

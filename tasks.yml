@@ -1,12 +1,16 @@
-- owner: 'vitejs'
-  repo: 'vite'
+
+- repoUrl: 'knightlyjs/fixture-1'
+  publishName: '@knightly/knightly-fixture-1'
+  branches: ['master']
+  pulls: [1]
+
+- repoUrl: 'vitejs/vite'
   publishName: '@knightly/vite'
   branches: ['master']
   pulls: []
   enabled: false
 
-- owner: 'vuejs'
-  repo: 'vitepress'
+- repoUrl: 'vuejs/vitepress'
   publishName: '@knightly/vitepress'
   branches: ['master']
   pulls: []
