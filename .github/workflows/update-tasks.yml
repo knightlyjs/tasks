@@ -1,4 +1,4 @@
-name: Knightly
+name: Update Tasks
 
 on:
   schedule:
@@ -15,11 +15,15 @@ jobs:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Get Latest Tasks
-        run: wget https://gist.githubusercontent.com/knightly-bot/eaad903eb6a18b78ec5060749ce28683/raw/tasks.json
-     
-      - name: Builds
-        run: npx knightly -c tasks.json
+      - run: npm i --only=prod
+
+      - name: Update Tasks
+        run: npm run update-tasks
+
+      - name: Add
+        uses: EndBug/add-and-commit@v4
+        with:
+          message: 'chore: update tasks'
+          add: 'README.md'
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

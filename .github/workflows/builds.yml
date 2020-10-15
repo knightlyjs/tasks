@@ -1,0 +1,25 @@
+name: Builds
+
+on:
+  schedule:
+    - cron: 0 0 * * *
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Get Latest Tasks
+        run: wget https://gist.githubusercontent.com/knightly-bot/eaad903eb6a18b78ec5060749ce28683/raw/tasks.json
+     
+      - name: Builds
+        run: npx knightly -c tasks.json
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
