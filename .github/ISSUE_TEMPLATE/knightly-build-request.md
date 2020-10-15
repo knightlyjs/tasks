@@ -31,7 +31,7 @@ Check the following boxes that apply to you.
 - [ ] Owner
 - [ ] Maintainer
 - [ ] Contributor
-- [ ] None, I just want to have previews of this project. (OK!) 
+- [ ] None, I just want to have previews of this project. (OK!)
 
 ## Extra Info
 
