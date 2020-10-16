@@ -1,0 +1,25 @@
+name: On Call
+
+on:
+  workflow_dispatch:
+    inputs:
+      tasks:
+        description: 'tasks.json'
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: echo "${{github.event.inputs.tasks}}"
+      - run: echo "${{github.event.inputs.tasks}}" > tasks.json
+      # - name: Builds
+      #   run: npx knightly -c tasks.json
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
