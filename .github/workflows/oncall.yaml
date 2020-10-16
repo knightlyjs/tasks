@@ -18,8 +18,8 @@ jobs:
 
       - run: echo "${{github.event.inputs.tasks}}"
       - run: echo "${{github.event.inputs.tasks}}" > tasks.json
-      # - name: Builds
-      #   run: npx knightly -c tasks.json
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Builds
+        run: npx knightly -c tasks.json
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
