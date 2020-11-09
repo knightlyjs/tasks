@@ -8,7 +8,10 @@ const GITHUB = 'https://github.com'
 const NPM = 'https://npmjs.com'
 
 async function run() {
-  const { data } = await axios.get<KnightlyTask[]>(GIST)
+  const { data } = await axios.get<KnightlyTask[]>(`${GIST}?t=${+new Date()}`)
+
+  if (typeof data === 'string')
+    throw new Error('Unexpected JSON format')
 
   const table: string[][] = []
 
