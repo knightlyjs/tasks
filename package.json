@@ -4,7 +4,8 @@
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "update-tasks": "esno scripts/update-tasks.ts"
+    "update-tasks": "esno scripts/update-tasks.ts",
+    "fetch-by-name": "esno scripts/fetch-by-name.ts"
   },
   "dependencies": {
     "axios": "^0.21.0",

@@ -1,17 +1,12 @@
 import { promises as fs } from 'fs'
-import axios from 'axios'
-import type { KnightlyTask } from 'knightly'
+import { fetchTasks } from './fetch'
 
-const GIST = 'https://gist.githubusercontent.com/knightly-bot/eaad903eb6a18b78ec5060749ce28683/raw/tasks.json'
 const REGEX = /<!--TASKS-START-->[\s\S]*<!--TASKS-END-->/m
 const GITHUB = 'https://github.com'
 const NPM = 'https://npmjs.com'
 
 async function run() {
-  const { data } = await axios.get<KnightlyTask[]>(`${GIST}?t=${+new Date()}`)
-
-  if (typeof data === 'string')
-    throw new Error('Unexpected JSON format')
+  const data = await fetchTasks()
 
   const table: string[][] = []
 
