@@ -20,4 +20,4 @@ jobs:
       - name: Distribute
         run: npm run distribute
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ANTFU_GITHUB_TOKEN }}
