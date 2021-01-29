@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "update-tasks": "esno scripts/update-tasks.ts",
-    "fetch-by-name": "esno scripts/fetch-by-name.ts"
+    "fetch-by-name": "esno scripts/fetch-by-name.ts",
+    "distribute": "esno scripts/distribute.ts"
   },
   "dependencies": {
+    "@octokit/rest": "^18.0.9",
     "axios": "^0.21.0",
     "esno": "^0.2.4"
   },

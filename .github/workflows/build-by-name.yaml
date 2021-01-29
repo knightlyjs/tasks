@@ -1,4 +1,4 @@
-name: On Call by Name
+name: Build by Name
 
 on:
   workflow_dispatch:
