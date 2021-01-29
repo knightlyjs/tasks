@@ -15,7 +15,7 @@ async function distribute() {
       owner: 'knightlyjs',
       repo: 'tasks',
       // Build, check out https://api.github.com/repos/knightlyjs/tasks/actions/workflows
-      workflow_id: 3030813,
+      workflow_id: 5391077,
       ref: 'main',
       inputs: {
         tasks: JSON.stringify(task),
