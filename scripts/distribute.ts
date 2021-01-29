@@ -11,7 +11,7 @@ async function distribute() {
     if (task.enabled === false)
       continue
 
-    await octokit.actions.createWorkflowDispatch({
+    const { data } = await octokit.actions.createWorkflowDispatch({
       owner: 'knightlyjs',
       repo: 'tasks',
       // Build, check out https://api.github.com/repos/knightlyjs/tasks/actions/workflows
@@ -22,7 +22,8 @@ async function distribute() {
       },
     })
 
-    console.log(`Scheduled task ${task.owner}/${task.repo}`)
+    console.log(`\nScheduled task ${task.owner}/${task.repo}`)
+    console.log(data)
   }
 }
 

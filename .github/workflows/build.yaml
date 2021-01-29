@@ -16,9 +16,9 @@ jobs:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
 
-      - run: echo '${{github.event.inputs.tasks}}'
       - run: echo '${{github.event.inputs.tasks}}' > oncall.json
-      - name: Builds
+
+      - name: Build
         run: npx knightly -c oncall.json
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
