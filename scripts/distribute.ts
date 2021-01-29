@@ -8,7 +8,7 @@ async function distribute() {
   const tasks = await fetchTasks()
 
   for (const task of tasks) {
-    if (!task.enabled)
+    if (task.enabled === false)
       continue
 
     await octokit.actions.createWorkflowDispatch({
