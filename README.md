@@ -20,6 +20,7 @@
 | [vamplate/vite-plugin-voie](https://github.com/vamplate/vite-plugin-voie) | [`@knightly/vite-plugin-voie`](https://npmjs.com/package/@knightly/vite-plugin-voie)<br>[`@knightly/voie-pages`](https://npmjs.com/package/@knightly/voie-pages) |  |  |
 | [mrmlnc/fast-glob](https://github.com/mrmlnc/fast-glob) | [`@knightly/fast-glob`](https://npmjs.com/package/@knightly/fast-glob) | [`master`](https://npmjs.com/package/@knightly/fast-glob/v/master) |  |
 | [ecomfe/veui](https://github.com/ecomfe/veui) | [`@knightly/veui`](https://npmjs.com/package/@knightly/veui)<br>[`@knightly/babel-preset-veui`](https://npmjs.com/package/@knightly/babel-preset-veui)<br>[`@knightly/babel-plugin-veui`](https://npmjs.com/package/@knightly/babel-plugin-veui)<br>[`@knightly/veui-loader`](https://npmjs.com/package/@knightly/veui-loader)<br>[`@knightly/veui-theme-dls`](https://npmjs.com/package/@knightly/veui-theme-dls)<br>[`@knightly/veui-theme-dls-icons`](https://npmjs.com/package/@knightly/veui-theme-dls-icons) | [`d20`](https://npmjs.com/package/@knightly/veui/v/d20) |  |
+| [storybookjs/addon-postcss](https://github.com/storybookjs/addon-postcss) | [`@knightly/storybook__addon-postcss`](https://npmjs.com/package/@knightly/storybook__addon-postcss) | [`master`](https://npmjs.com/package/@knightly/storybook__addon-postcss/v/master) |  |
 <!--TASKS-END-->
 
 [Raw Configurations](https://gist.github.com/knightly-bot/eaad903eb6a18b78ec5060749ce28683)
