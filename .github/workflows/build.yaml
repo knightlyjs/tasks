@@ -16,6 +16,7 @@ jobs:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
 
+      - run: npm i -g @antfu/ni pnpm rimraf cross-env
       - run: echo '${{github.event.inputs.tasks}}' > oncall.json
 
       - name: Build

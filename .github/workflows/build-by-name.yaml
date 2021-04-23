@@ -16,7 +16,8 @@ jobs:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
 
-      - run: npm i --only=prod
+      - run: npm i -g @antfu/ni pnpm rimraf cross-env
+      - run: ni --prod
 
       - name: Update Tasks
         run: npm run fetch-by-name -- '${{github.event.inputs.name}}'
