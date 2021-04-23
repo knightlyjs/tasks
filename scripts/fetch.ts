@@ -7,7 +7,7 @@ export async function fetchTasks() {
   const { data } = await axios.get<KnightlyTask[]>(`${GIST}?t=${+new Date()}`)
 
   if (typeof data === 'string')
-    throw new Error('Unexpected JSON format')
+    return JSON.parse(data)
 
   return data
 }
