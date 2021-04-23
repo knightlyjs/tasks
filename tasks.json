@@ -137,21 +137,6 @@
     }
   },
   {
-    "owner": "vamplate",
-    "repo": "vite-plugin-voie",
-    "publishName": "@knightly/vite-plugin-voie",
-    "defaultBranch": "master",
-    "monorepo": true,
-    "workspaces": "packages/*",
-    "branches": [],
-    "buildScript": "npx lerna bootstrap --no-ci && npx lerna run build",
-    "packagesNameMap": {
-      "vite-plugin-voie": "@knightly/vite-plugin-voie",
-      "voie-pages": "@knightly/voie-pages"
-    },
-    "pulls": []
-  },
-  {
     "owner": "mrmlnc",
     "repo": "fast-glob",
     "publishName": "@knightly/fast-glob",
