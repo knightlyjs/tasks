@@ -12,12 +12,17 @@
     "branches": [
       "main"
     ],
-    "buildScript": "npm run test --if-present",
+    "buildScript": "npm run build --if-present",
     "pulls": [],
     "monorepo": true,
     "buildForEach": true,
+    "workspaces": "packages/*",
     "packagesNameMap": {
-      "vite": "@knightly/vite"
+      "vite": "@knightly/vite",
+      "@vitejs/plugin-vue": "@knightly/vitejs_plugin-vue",
+      "@vitejs/plugin-vue-jsx": "@knightly/vitejs_plugin-vue-jsx",
+      "@vitejs/plugin-react-refresh": "@knightly/vitejs_plugin-react-refresh",
+      "@vitejs/plugin-legacy": "@knightly/vitejs_plugin-legacy"
     }
   },
   {
@@ -192,5 +197,15 @@
     "pulls": [
       17
     ]
+  },
+  {
+    "owner": "windicss",
+    "repo": "windicss",
+    "publishName": "@knightly/windicss",
+    "defaultBranch": "main",
+    "branches": [
+      "main"
+    ],
+    "pulls": []
   }
 ]
