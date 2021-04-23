@@ -31,8 +31,7 @@
     "publishName": "@knightly/vitepress",
     "defaultBranch": "master",
     "branches": [
-      "master",
-      "vite2"
+      "master"
     ],
     "mantainers": [
       "yyx990803",
