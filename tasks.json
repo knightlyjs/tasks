@@ -13,7 +13,9 @@
       "main"
     ],
     "buildScript": "npm run build --if-present",
-    "pulls": [],
+    "pulls": [
+      2432
+    ],
     "monorepo": true,
     "buildForEach": true,
     "workspaces": "packages/*",
@@ -190,6 +192,8 @@
     "branches": [
       "main"
     ],
-    "pulls": []
+    "pulls": [
+      265,
+    ]
   }
 ]
