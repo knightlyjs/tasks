@@ -19,10 +19,10 @@
     "workspaces": "packages/*",
     "packagesNameMap": {
       "vite": "@knightly/vite",
-      "@vitejs/plugin-vue": "@knightly/vitejs_plugin-vue",
-      "@vitejs/plugin-vue-jsx": "@knightly/vitejs_plugin-vue-jsx",
-      "@vitejs/plugin-react-refresh": "@knightly/vitejs_plugin-react-refresh",
-      "@vitejs/plugin-legacy": "@knightly/vitejs_plugin-legacy"
+      "@vitejs/plugin-vue": "@knightly/vitejs__plugin-vue",
+      "@vitejs/plugin-vue-jsx": "@knightly/vitejs__plugin-vue-jsx",
+      "@vitejs/plugin-react-refresh": "@knightly/vitejs__plugin-react-refresh",
+      "@vitejs/plugin-legacy": "@knightly/vitejs__plugin-legacy"
     }
   },
   {
