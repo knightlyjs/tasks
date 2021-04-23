@@ -1,0 +1,196 @@
+[
+  {
+    "owner": "vitejs",
+    "repo": "vite",
+    "repoUrl": "vitejs/vite",
+    "publishName": "@knightly/vite",
+    "defaultBranch": "main",
+    "mantainers": [
+      "yyx990803",
+      "underfin"
+    ],
+    "branches": [
+      "main"
+    ],
+    "buildScript": "npm run test --if-present",
+    "pulls": [],
+    "monorepo": true,
+    "buildForEach": true,
+    "packagesNameMap": {
+      "vite": "@knightly/vite"
+    }
+  },
+  {
+    "owner": "vuejs",
+    "repo": "vitepress",
+    "publishName": "@knightly/vitepress",
+    "defaultBranch": "master",
+    "branches": [
+      "master",
+      "vite2"
+    ],
+    "mantainers": [
+      "yyx990803",
+      "posva",
+      "kiaking"
+    ],
+    "pulls": []
+  },
+  {
+    "owner": "vuejs",
+    "repo": "vue-next",
+    "publishName": "@knightly/vue",
+    "defaultBranch": "master",
+    "mantainers": [
+      "yyx990803"
+    ],
+    "branches": [
+      "master"
+    ],
+    "pulls": [
+      2195
+    ],
+    "monorepo": true,
+    "workspaces": "packages/*",
+    "packagesNameMap": {
+      "vue": "@knightly/vue",
+      "@vue/reactivity": "@knightly/vue__reactivity",
+      "@vue/shared": "@knightly/vue__shared",
+      "@vue/compiler-core": "@knightly/vue__compiler-core",
+      "@vue/compiler-dom": "@knightly/vue__compiler-dom",
+      "@vue/compiler-sfc": "@knightly/vue__compiler-sfc",
+      "@vue/compiler-ssr": "@knightly/vue__compiler-ssr",
+      "@vue/runtime-dom": "@knightly/vue__runtime-dom",
+      "@vue/runtime-core": "@knightly/vue__runtime-core",
+      "@vue/server-renderer": "@knightly/vue__server-renderer"
+    }
+  },
+  {
+    "owner": "vuejs",
+    "repo": "composition-api",
+    "publishName": "@knightly/vue__composition-api",
+    "defaultBranch": "master",
+    "mantainers": [
+      "pikax"
+    ],
+    "branches": [
+      "master"
+    ],
+    "pulls": []
+  },
+  {
+    "owner": "vuejs",
+    "repo": "vue-router-next",
+    "publishName": "@knightly/vue-router",
+    "buildScript": "yarn run build && yarn run build:dts",
+    "defaultBranch": "master",
+    "branches": [
+      "master"
+    ],
+    "mantainers": [
+      "posva"
+    ],
+    "pulls": []
+  },
+  {
+    "owner": "vuejs",
+    "repo": "vuex",
+    "publishName": "@knightly/vuex",
+    "defaultBranch": "4.0",
+    "branches": [
+      "4.0"
+    ],
+    "mantainers": [
+      "kiaking"
+    ],
+    "pulls": []
+  },
+  {
+    "owner": "egoist",
+    "repo": "esbuild-register",
+    "publishName": "@knightly/esbuild-register",
+    "branches": [],
+    "pulls": []
+  },
+  {
+    "owner": "antfu",
+    "repo": "vueuse",
+    "publishName": "@knightly/vueuse",
+    "defaultBranch": "master",
+    "branches": [
+      "dev"
+    ],
+    "pulls": [],
+    "monorepo": true,
+    "workspaces": "packages/*",
+    "packagesNameMap": {
+      "@vueuse/core": "@knightly/vueuse",
+      "@vueuse/shared": "@knightly/vueuse__shared",
+      "@vueuse/integrations": "@knightly/vueuse__integrations",
+      "@vueuse/firebase": "@knightly/vueuse__firebase",
+      "@vueuse/rxjs": "@knightly/vueuse__rxjs",
+      "@vueuse/router": "@knightly/vueuse__router"
+    }
+  },
+  {
+    "owner": "vamplate",
+    "repo": "vite-plugin-voie",
+    "publishName": "@knightly/vite-plugin-voie",
+    "defaultBranch": "master",
+    "monorepo": true,
+    "workspaces": "packages/*",
+    "branches": [],
+    "buildScript": "npx lerna bootstrap --no-ci && npx lerna run build",
+    "packagesNameMap": {
+      "vite-plugin-voie": "@knightly/vite-plugin-voie",
+      "voie-pages": "@knightly/voie-pages"
+    },
+    "pulls": []
+  },
+  {
+    "owner": "mrmlnc",
+    "repo": "fast-glob",
+    "publishName": "@knightly/fast-glob",
+    "defaultBranch": "master",
+    "branches": [
+      "master"
+    ],
+    "pulls": []
+  },
+  {
+    "owner": "ecomfe",
+    "repo": "veui",
+    "publishName": "@knightly/veui",
+    "defaultBranch": "d20",
+    "branches": [
+      "d20"
+    ],
+    "mantainers": [
+      "Justineo"
+    ],
+    "buildScript": "npm run bootstrap",
+    "pulls": [],
+    "workspaces": "packages/*",
+    "monorepo": true,
+    "packagesNameMap": {
+      "veui": "@knightly/veui",
+      "babel-preset-veui": "@knightly/babel-preset-veui",
+      "babel-plugin-veui": "@knightly/babel-plugin-veui",
+      "veui-loader": "@knightly/veui-loader",
+      "veui-theme-dls": "@knightly/veui-theme-dls",
+      "veui-theme-dls-icons": "@knightly/veui-theme-dls-icons"
+    }
+  },
+  {
+    "owner": "storybookjs",
+    "repo": "addon-postcss",
+    "publishName": "@knightly/storybook__addon-postcss",
+    "defaultBranch": "master",
+    "branches": [
+      "master"
+    ],
+    "pulls": [
+      17
+    ]
+  }
+]
