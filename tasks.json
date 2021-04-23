@@ -189,11 +189,12 @@
     "repo": "windicss",
     "publishName": "@knightly/windicss",
     "defaultBranch": "main",
+    "publishDir": "dist",
     "branches": [
       "main"
     ],
     "pulls": [
-      265,
+      265
     ]
   }
 ]
