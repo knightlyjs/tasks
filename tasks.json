@@ -55,10 +55,12 @@
       "3.2"
     ],
     "pulls": [],
+    "buildScript": "yarn run build --release",
     "monorepo": true,
     "workspaces": "packages/*",
     "packagesNameMap": {
       "vue": "@knightly/vue",
+      "vue-compact": "@knightly/vue-compact",
       "@vue/reactivity": "@knightly/vue__reactivity",
       "@vue/shared": "@knightly/vue__shared",
       "@vue/compiler-core": "@knightly/vue__compiler-core",
