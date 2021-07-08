@@ -51,11 +51,10 @@
       "yyx990803"
     ],
     "branches": [
-      "master"
+      "master",
+      "3.2"
     ],
-    "pulls": [
-      2195
-    ],
+    "pulls": [],
     "monorepo": true,
     "workspaces": "packages/*",
     "packagesNameMap": {
