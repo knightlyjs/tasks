@@ -1,3 +1,7 @@
+# ⛔️ The bot service of Knightly is discontinued
+
+---
+
 ## Community Maintained [Knightly](https://github.com/antfu/knightly) Build Tasks
 
 [![Nightly Build](https://github.com/antfu/knightly/blob/main/res/badge.svg?raw=true)](https://github.com/antfu/knightly)
